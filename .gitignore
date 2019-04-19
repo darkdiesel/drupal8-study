@@ -6,5 +6,5 @@ modules/contrib/
 vendor/**/*
 sites/**/files/**/*
 sites/default/settings.php
-sites/settings.local.php
+sites/default/settings.local.php
 **/node_modules/**/*
