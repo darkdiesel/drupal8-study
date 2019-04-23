@@ -8,7 +8,8 @@
         "wikimedia/composer-merge-plugin": "^1.4",
         "drupal/backup_migrate": "^4.0",
         "drupal/admin_toolbar": "^1.26",
-        "drupal/restui": "^1.16"
+        "drupal/restui": "^1.16",
+        "drupal/smtp": "^1.0@beta"
     },
     "replace": {
         "drupal/core": "^8.6"
