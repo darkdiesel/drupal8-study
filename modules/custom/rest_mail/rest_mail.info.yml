@@ -1,0 +1,5 @@
+name: Rest Mail
+type: module
+description: Sending mails via rest api
+package: Cogniteq
+core: 8.x

@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_mail().
+ */
+function rest_mail_mail($key, &$message, $params) {
+$options = array(
+  'langcode' => $message['langcode'],
+);
+  switch ($key) {
+    case 'rest_mail':
+      $message['from'] = (isset($params['from']) ? $params['from'] : \Drupal::config('system.site')->get('mail'));
+      $message['subject'] = $params['title'];
+      $message['body'][] = \Drupal\Component\Utility\Html::escape($params['message']);
+      break;
+  }
+}
